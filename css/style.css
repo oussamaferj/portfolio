@@ -1,0 +1,349 @@
+
+
+.navbar {
+    z-index: 9999;
+    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+  }
+ 
+ 
+  .bg-image {
+    /* The image used */
+    background-image: url("http://image-api.nrj.fr/comment-se-specialiser-dans-l-informatique-open-source-istock-77392727-medium_57a9a4c4ca2e6.jpg?w=900");
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+  }
+  
+  .animation{
+      
+      height: 980px;
+      color:black;
+     
+     
+  }
+h1{
+    margin-left: 600px;
+    width: 35%;
+    position: absolute;
+    top:70%;
+    color:#fff;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+    
+    
+}
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 400px;
+    perspective: 1000px;
+    margin-left: 700px;
+    position: absolute;
+    top: 20%;
+    
+   
+  }
+  .title1{
+    position: absolute;
+    bottom:800px;
+    left:900px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:40px; 
+  }
+  .line12{
+    position: absolute;
+    bottom:780px;
+    left:700px;
+
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+   
+  }
+  
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+ 
+  .flip-card-back {
+    background-color:#F9F8F8;
+    color: black;
+    transform: rotateY(180deg);
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1.5s;
+    -webkit-transition-delay: 0s;
+   
+  }
+  .flip-card-back:hover{
+        width: 650px;
+        
+      
+  }
+  .Avatar {
+    border-radius: 50%;
+    width:350px;height:380px;
+    margin-left: 70px;
+   
+  }
+  .icon-1{
+      width: 100px;
+      height: 100px;
+  }
+  h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+h3{
+
+    margin-left: 30px;
+    margin-top: 75px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.transition-bar {
+    
+      height: 50px;
+     background: blue;
+    animation-fill-mode: forwards;
+    margin-left: 200px;
+     margin-top: 50px;
+     position: relative;
+     bottom:295px;
+     width: 10px; 
+  }
+  
+   .flip-card-back:hover .transition-bar{
+    -webkit-animation-name:animate; 
+    -webkit-animation-duration: 2s;
+   }
+  @-webkit-keyframes animate {
+    from {
+        width: 10px; 
+      }
+      to {
+        width: 350px; 
+        
+      } 
+  }
+  span{
+    color:white;
+    font-size: 22px;
+  }
+  .mid4{
+    position: relative;
+    padding-left:400px;
+    padding-right: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    flex-flow: wrap;
+    cursor: pointer;
+    margin-bottom: 550px;
+  }
+  .office{
+    border:0.1px solid #F7EFEF;
+    width: 310px;
+    height: 360px;
+    
+  }
+  .line{
+    position: relative;
+    left:20px;
+    top:2px;
+    font-size: 20px;
+  }
+  .line2{
+    position: relative;
+    left:180px;
+    bottom:40px;
+    
+  
+  }
+  .mid4office{
+    -webkit-border-radius: 6px;
+  }
+  .mid4 .office:hover{
+    webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3); 
+  }
+  .mid4 .office button{
+    color:white;
+    background-color: #3E83E2;
+    border: 0px;
+    -webkit-border-radius: 5px;
+    font-size: 11px;
+    padding: 9px;
+  }
+  .mid3{
+    position: relative;
+    text-align: center;
+  }
+  footer{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    border-top: 0.5px solid #C7B9B9;
+    margin-bottom:0%;
+    
+  }
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+#about{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/about.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+  #about h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  #about p{
+    font-size: 1.5em;
+    text-align: justify;
+  }
+
+  #about img{
+    padding: 10px;
+    /*max-width: 180px;*/
+  }
+  #white-bg{
+    /*background-color: rgba(0,0,0, 0.5);
+    border-radius: 20px;
+    margin-right: 10px;*/
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6% 2%;
+  }
+  
+  
+   
+  
+  hr{
+    width: 25%;
+  }
+  #portfolio{
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding-bottom: 50px;
+    color: black;
+  }
+  
+    #portfolio h1{
+      font-size: 5em;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                   0px 8px 13px rgba(0,0,0,0.5),
+                   0px 18px 23px rgba(0,0,0,0.1);
+    }
+  
+  .thumbnail{
+    position: relative;
+  }
+  
+    .thumbnail img{
+      min-height: 250px;
+      min-width: 300px;
+    }
+  
+  .thumbnail-hover{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 99%;
+    width: 99%;
+    opacity: 0;
+    transition:2s;
+  }
+  
+      .thumbnail-hover:hover{
+      top: 2px;
+      left: 2px;
+      position: absolute;
+      height: 99%;
+      width: 99%;
+      background-color: rgba(0,0,0,0.8);
+      margin: 0 auto;
+      transition:.5s;
+      opacity: 1;
+      padding-top: 30%;
+      border-radius: 5px;
+    }
+  
+    .thumbnail-hover i{
+      text-decoration: none;
+      color: white;
+    }
+  
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+ 
+    #contact {
+     
+      height: 800px;
+      background-image: url(http://www.sclance.com/backgrounds/contact-us-background-image/contact-us-background-image_625281.jpg);
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      padding-top: 20px;
+    }
+   .icon{
+     border-radius: 50%;
+     height: 15%;
+     width: 8%;
+     
+   }
+    
